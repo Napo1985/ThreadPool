@@ -40,7 +40,6 @@ namespace ThreadPool
 				{
 					return;
 				}
-
 				task = m_tasks.Take();
 				task?.Invoke();
 				task = null;			
